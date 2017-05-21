@@ -2,7 +2,8 @@ public class BowlingGame {
 
     public int getBowlingScore(String bowlingCode) {
         int sum = 0;
-
+	String res = bowlingCode.readLine().replaceAll("\\|", " ");
+	String[] cores = res.split("\\s+");
 		int len = cores.length;
 		int[][] scores = createFrame(len, cores);
 
